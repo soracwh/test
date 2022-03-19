@@ -9,15 +9,19 @@ import java.util.Date;
  */
 public class DateStudy {
     private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm");
-    private static SimpleDateFormat shortDateFormate = new SimpleDateFormat("hh:mm");
+    private static SimpleDateFormat shortDateFormat = new SimpleDateFormat("hh:mm");
     public static void dateStudy1(){
         Date date = new Date();
         System.out.println(sdf.format(date));
-        System.out.println(shortDateFormate.format(date));
+        System.out.println(shortDateFormat.format(date));
     }
     public static void dateStudy2(){
         Calendar calendar = Calendar.getInstance();
         System.out.println(sdf.format(calendar));
+    }
+
+    public static void hello(){
+        System.out.println("hello world");
     }
 
     public static void main(String[] args) {
